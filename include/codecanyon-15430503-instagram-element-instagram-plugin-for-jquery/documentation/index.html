@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram Element - jQuery Plugin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+		
+	<!-- Pretty Code -->
+	<link href="js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	
+  </head>
+
+  <body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Instagram Element - jQuery Plugin</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="hero-unit">
+			<h1>Instagram Element</h1>
+			<p>
+				Capture and share the world's moments with Instagram Element. A powerful, versatile plugin that allows you to display your 
+				Instagram photos on a website or blog-- leveraging the full power of the Instagram API.
+			</p>
+			<p><a class="btn btn-large btn-success start-demo">Get Started »</a></p>
+		</div>
+		
+		<div class="page-header">
+			<h2>Overview</h2>
+			<p>
+				Instagram Element is easy to use and has an extensive selection of options. We listened to your feature requests and created a 
+				brand new product that includes them all. See the list below for more details!
+			</p>
+			
+			<h3>Key Features</h3>
+
+			<ul>
+				<li>
+				    <strong>Popular Instagram Feed Mode -</strong> 
+				    This feed mode pulls in the photos from the Instagram popular feed.
+				</li>
+
+				<li>
+				    <strong>User Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify a user id to pull in photos from a specific user.
+				</li>
+
+				<li>
+				    <strong>Multiuser Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify multiple user id’s to pull in photos from specific users. 
+				    Note, this feature does NOT allow load more functionality.
+				</li>
+
+				<li>
+				    <strong>Tag Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify a hashtag to search from the Instagram API.
+				</li>
+
+				<li>
+				    <strong>Multi Tag Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify multiple hashtags to pull in photos from specific users. 
+				    Note, this feature does NOT allow load more functionality.
+				</li>
+
+				<li>
+				    <strong>Location Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify location id to pull in all photos taken in a given location.
+				</li>
+
+				<li>
+				    <strong>User Liked Instagram Feed Mode -</strong> 
+				    This feed mode allows you to specify a user id to pull photos that were liked by a specific user.
+				</li>
+			</ul>
+			
+		</div>	
+		
+		<div class="page-header">
+			<h2>Demonstration</h2>
+		</div>
+	
+		<br /><img style="border:solid 1px #EDEDED;" src="css/images/fig-1.jpg" /><br /><br />
+		<br /><img style="border:solid 1px #EDEDED;" src="css/images/fig-2.jpg" /><br /><br />
+		<br /><img style="border:solid 1px #EDEDED;" src="css/images/fig-3.jpg" /><br /><br />
+	
+		<div class="page-header">
+			<h2>Usage</h2>
+		</div>
+		
+		<p>1. First, make sure you are using valid DOCTYPE.</p>
+		<p>2. Include necessary JS files.</p>
+	
+		<pre class="prettyprint">
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="../lib/videoplayer/js/mediaelement-and-player.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../lib/fancybox2/source/jquery.fancybox.pack.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../lib/dateFormat.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../lib/easing.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../instagramElement.js"&gt;&lt;/script&gt;
+</pre>
+
+		<p>3. Include necessary CSS files.</p>
+	
+		<pre class="prettyprint">
+&lt;link rel="stylesheet" href="../lib/videoplayer/css/style.css" media="screen"&gt;
+&lt;link href="../lib/fancybox2/source/jquery.fancybox.css" rel="stylesheet"&gt;
+&lt;link href="../instagramElement.css" rel="stylesheet"&gt;
+</pre>
+
+		<p>4. Create the HTML container you wish to display your gallery in.</p>
+		
+<pre class="prettyprint">
+	&lt;div class="element"&gt;&lt;/div&gt;
+</pre>
+
+		<p>5. Activate the plugin.</p>
+		
+<pre class="prettyprint">
+$('.element').instagramElement({
+   mode : 'user',
+   userID : 'YOUR_NUMERIC_USERID',
+   accessToken : 'YOUR_ACCESS_TOKEN',
+   galleryMode: 'classic',
+   video: true,
+   showVideoControls: false
+});
+</pre>
+	
+		<div class="page-header">
+			<h2>API & Options</h2>
+		</div>
+		
+		<p>
+			Now that you've installed the plugin and explored the different options, it is time to make some decisions and configure your element. 
+			Take a look at the list below to see the available shortcode options. 
+		</p>
+		
+		<ul>
+			<li><strong>accessToken</strong> - String: This a mandatory setting that allows you to specify a user token.
+			<li><strong>mode</strong> - String: (user,popular,tag,multiuser,multitag,liked,location,contest) Sets the Instagram feed mode. Default is popular.
+			<li><strong>userID</strong> - String: This is a setting that you have to use if your using "user" mode. Default is Kevin Burg".
+			<li><strong>tag</strong> - String: Sets the tag used to pull photos from. Default is sports.
+			<li><strong>locationID</strong> - String: Sets the id of a location you would like to pull photos from. Default is The Dubai Mall, Dubai.
+			<li><strong>galleryMode</strong> - String: (classic) Sets the gallery interface.
+			<li><strong>video</strong> - Boolean: (true,false) If true, the HTML 5 video player will be included.
+			<li><strong>speed</strong> - Integer: Sets the speed of the images fade in effect. Default is 700.
+			<li><strong>delayInterval</strong> - Integer: Sets the interval of the delay between photos appearing. Default is 80.
+			<li><strong>showVideoControls</strong> - Boolean: (true,false) Sets display of video player interface controls.
+			<li><strong>count</strong> - Integer: Sets the amount of photos to load. Only supported on "liked" mode.
+			<li><strong>limit</strong> - Integer: Sets the maximum amount of photos to load. This only works if the integer is less than 20.
+			<li><strong>showUsername</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showDescription</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showLikes</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showComments</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showLocation</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showDate</strong> - Boolean: (true,false) Enables this in the popup interface.
+			<li><strong>showLink</strong> - Boolean: (true,false) Enables this in the popup interface.
+		</ul>
+		<br />
+	
+		<div class="page-header">
+			<h2>Instagram API Authentication</h2>
+			<p>You can easily get your Instagram username and accesstoken by logging into the following tool.</p>
+			<p><a target="_blank" href="https://api.instagram.com/oauth/authorize/?client_id=ab103e54c54747ada9e807137db52d77&redirect_uri=http://blueprintinteractive.com/tutorials/instagram/uri.php&response_type=code">Instagram Token Tool</a></p>
+		</div>
+				
+	</div>
+
+  </body>
+</html>
