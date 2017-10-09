@@ -1112,10 +1112,29 @@
 		margin: 0 auto;
 		padding: 0 15px !important;
 	}
+	
+	div.recipe  {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirections  {
+	position: absolute;
+	top:0em;
+	left:4.0em;
+	width: auto;
+}
+	
+	
+	
 
 	h1 { font-size: 28px; }
 
-	h2 { font-size: 24px; }
+	h2 { font-size: 24px;
+	margin-top:0;
+	}
 
 	h3 { font-size: 20px; }
 
@@ -1676,6 +1695,18 @@
 	.-large.i-plain{
 		text-align:center !important;
 	}
+	
+	.recipeDirections  {
+	position: absolute;
+	top:0em;
+	right:5em;
+	width: 75%;
+	text-align: right;
+}
+.recipeDirections > p {
+	font-size: 0.8em;
+	color:#00ff00;
+}
 	
 	.container,
 	#header.full-header .container,

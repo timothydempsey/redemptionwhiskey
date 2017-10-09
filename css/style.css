@@ -9,7 +9,6 @@
 
 	Redemption Whiskey Site
 	June 2017
-	Conceptualized, created, and implemented by Leanne Scorcia.
 
 -----------------------------------------------------------------------------------*/
 
@@ -167,6 +166,11 @@ a {
 	color: #FFc730;
 }
 
+div.ingredients > ul {
+	width:35%;
+}
+
+
 a:hover { color: #222; }
 
 a img { border: none; }
@@ -248,7 +252,70 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 20px; }
+form {
+	bottom: 73%;
+
+}
+
+div.recipe  {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirections  {
+	position: absolute;
+	top:5.0em;
+	left:5.0em;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirectionsOpt15  {
+	position: absolute;
+	top:5.0em;
+	left:14.0em;
+	width: auto;
+}
+
+
+div.recipe > div.ingredientsdirectionsOpt2  {
+	position: absolute;
+	top:5.0em;
+	left:19.0em;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirectionsOpt3  {
+	position: absolute;
+	top:5.0em;
+	left:36.0em;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirectionsOpt4  {
+	position: absolute;
+	top:8.0em;
+	left:10.0em;
+	width: auto;
+}
+
+div.recipe > div.ingredientsdirectionsOpt5  {
+	position: absolute;
+	top:8.0em;
+	left:22.0em;
+	width: auto;
+}
+
+
+/*
+.recipeDirections  {
+	position: absolute;
+	top:18.5em;
+	right:16.5em;
+	width: 28%;
+	left: 316px;
+}*/
 
 small { font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -2998,9 +3065,9 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 .swiper_wrapper .swiper-container {
 	position: relative;
-	width:100%;
+	width:100%; /*was 100% */
 	height:100%;
-	margin: 0;
+	margin: 2.0em auto;
 }
 
 .swiper_wrapper .swiper-slide {
