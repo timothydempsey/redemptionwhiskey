@@ -63,8 +63,10 @@ Created and implemented by Leanne Scorcia-->
 	
 	
 	<!-- Instagram Widget -->
-<script type="text/javascript" src="js/instafeed.js-master/instafeed.min.js"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript" src="js/instafeed.js-master/instafeed.min.js"></script>
+-->
+		<script type="text/javascript" src="js/jquery-instagram-element/instagramElement.js">
+		<script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
 		tagName: "RedemptionWhiskey",
@@ -245,7 +247,7 @@ Created and implemented by Leanne Scorcia-->
 									</div>
 							</div>
 							<div class="video-wrap">
-								<video poster="images/BottlingStill.png" preload="auto" loop autoplay muted>
+								<video preload="auto" loop autoplay muted><!--poster="images/BottlingStill.png"--> 
 									<source src="images/Bottling.mp4" type="video/mp4" />
 									<source src="images/Bottling.webm" type="video/webm" />
 								</video>
@@ -358,7 +360,7 @@ Created and implemented by Leanne Scorcia-->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- External JavaScripts
-	============================================= -->
+	============================================== -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
